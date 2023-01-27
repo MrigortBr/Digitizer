@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digitalizer</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="index.js"></script>
+</head>
+<body onload="organizarLayout()">
+    <header>
+        <svg class="logo-svg" width="46" height="46" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path d="M18 3a3 3 0 0 0-3 3v12a3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3H6a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3V6a3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3h12a3 3 0 0 0 3-3 3 3 0 0 0-3-3z"></path>
+        </svg>
+        <h1 class="logo-text" title="teste">Digitalizer</h1>
+        
+
+    </header>
+
+    <div class="functions" >
+        <span onclick="alterarNumeroDePalavras()" id="quantidade" class="item-menu-type">50</span>
+        <svg class="item-menu-type" onclick="recomecarTeste()" width="30" height="30" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path d="M1 4v6h6"></path>
+            <path d="M23 20v-6h-6"></path>
+            <path d="M20.49 9A9 9 0 0 0 5.64 5.64L1 10"></path>
+            <path d="m23 14-4.64 4.36A9 9 0 0 1 3.51 15"></path>
+          </svg>
+        <input class="item-menu-type2" type="color"  onchange="trocarCor(event)">
+        <svg  onclick ="trocarTema()" id="tema" class="item-menu-type" width="30" height="30" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"></svg>
+        <svg  id="mostrarHistorico" onclick = "mostrarHistorico()"class="item-menu-type" width="30" height="30" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path d="M21 8v13H3V8"></path>
+            <path d="M1 3h22v5H1z"></path>
+            <path d="M10 12h4"></path>
+          </svg>
+    
+    </div>
+   
+    
+    <div class="words" onclick="iniciarTeste1()"> 
+        <div></div>
+    </div>
+    
+    <div class="timer">
+        <p class="timer-text"></p>
+    </div>    
+
+    <div class="resultado">
+        <h1 id="tempo">Tentativa Atual: 2:45</h1>
+        <h1 id="acerto">margem de acerto: 92%</h1>
+        <h1 id="texto">Texto Digitado por voce:</h1>
+    </div>
+
+
+
+
+
+</body>
+</html>
